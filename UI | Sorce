@@ -1,0 +1,270 @@
+--[[
+
+Since this Gui Is Open Sorced can you sub to Jopzll / Me because u can take my hard work easyly
+Rember if u TAKE THIS AND PUBLISH IT ON PASTEBIN OR GITHUB AND CHANGE THE OWNER TAG 
+SUCH AS JOPZLL I WILL TRY AND TAKE IT DOWN
+but on the good side u can little bits of my code ONLY if u ceredit me 
+
+Cedrits = 
+
+Animation pack Scripts = DINOSCARXXX
+Tapping legends X Script Helper = ignLouses
+Prison life script helper = Zerio
+Ui lib / Orion Owner = Shelxware
+
+- Jopzll :)
+
+--]]
+
+print("Hello World") -- Check console and if u seee this the script is on :)
+print("Script On, Loading Script")
+
+
+-- Autos
+local Animate = game.Players.LocalPlayer.Character.Animate -- Checks Your charater for a local script called Animate to change your animation pacl
+game.Players.LocalPlayer.Character.Humanoid.UseJumpPower = true -- Turns on Jump Power and turns off Jump Height
+
+-- Main
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "CoinU", HidePremium = false, SaveConfig = true, IntroText = "CoinU", ConfigFolder = "CoinU"})
+-- Tabs
+local HT = Window:MakeTab({
+	Name = "Home",
+	PremiumOnly = false
+})
+
+
+local PT = Window:MakeTab({
+	Name = "Player",
+	PremiumOnly = false
+})
+
+local TLX = Window:MakeTab({
+	Name = "tapping legends x",
+	PremiumOnly = false
+})
+
+local PF = Window:MakeTab({
+Name = "Prison life",
+PremiumOnly = false
+})
+-- Home Stuff
+HT:AddParagraph("NOTE ABOUT ME","soo i haven't uploaded in a while because i went get some milk but on the real note i can't just Upload hubs for content for me to showcase because i have school and i need study. I hope u all understand, Message by Jopzll the man himself")
+HT:AddParagraph("Script Infomation", "This beautiful black OP UI was made by the beautiful Jopzll / MEE, This Gui has Really op stuff to troll your friends have fun and auto farm Also please dont abuse my hacks it could ruin the game for everyone if you abuse this ui or lake hub and more uis...")
+
+-- Player stuff
+
+PT:AddSlider({ -- This Slider changes your Walkspeed to change how fast u are
+	Name = "Speed",
+	Min = 16,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(0,255,0),
+	Increment = 1,
+	ValueName = "",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+
+PT:AddSlider({
+	Name = "JumpPower",
+	Min = 50,
+	Max = 1500,
+	Default = 16,
+	Color = Color3.fromRGB(0,255,0),
+	Increment = 1,
+	ValueName = "",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+})
+
+PT:AddButton({
+ Name = "Ninja Animation Pack", 
+ Callback = function()
+  Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+ end
+ })
+ 
+ PT:AddButton({
+ Name = "Mage Animation Pack", 
+ Callback = function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=707742142"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=707855907"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=707897309"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=707853694"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=707826056"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
+ end
+ })
+ 
+  PT:AddButton({
+ Name = "Pirate Animation Pack", 
+ Callback = function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=750781874"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=750782770"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=750785693"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=750783738"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=750782230"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=750779899"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=750780242"
+ end
+ })
+ 
+   PT:AddButton({
+ Name = "Superhero Animation Pack", 
+ Callback = function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616111295"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616113536"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616122287"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616117076"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616115533"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616104706"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616108001"
+ end
+ })
+ 
+   PT:AddButton({
+ Name = "Toy Animation Pack", 
+ Callback = function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
+ end
+ })
+ 
+    PT:AddButton({
+ Name = "Vampire Animation Pack", 
+ Callback = function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083445855"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083450166"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083443587"
+ end
+ })
+
+
+    PT:AddButton({
+ Name = "WereWolf Animation Pack", 
+ Callback = function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083178339"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083216690"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083182000"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083189019"
+ end
+ })
+ 
+     PT:AddButton({
+ Name = "Zombie Animation Pack", 
+ Callback = function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+ end
+ })
+
+ 
+TLX:AddToggle({ -- Auto taps for u
+Name = "AutoTap",
+Default = false,
+Callback = function(v)
+ _G.AT = v
+ while _G.AT == true do
+ game:GetService("ReplicatedStorage").Remotes.Tap:FireServer()
+ wait(0.0000000000000000000000000000000000000000000000000000000000000000001)
+ end
+end
+})
+
+ 
+TLX:AddToggle({ -- Auto Rebirths for u
+Name = "AutoRebirth",
+Default = false,
+Callback = function(v)
+ _G.AB = v
+ while _G.AB == true do
+ game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(2)
+ wait(0.0000000000000000000000000000000000000000000000000000000000000000001)
+ end
+end
+})
+
+TLX:AddButton({ -- When your lazy u can always equip your best pets usin his ui
+ Name = "Equip Best pets",
+ Callback = function ()
+  game:GetService("ReplicatedStorage").Remote.Equip.EquipBest:InvokeServer()
+ end
+})
+
+PF:AddDropdown({ -- Gives u a gun
+	Name = "Give guns",
+	Default = "",
+	Options = {"M9", "Remington 870", "AK-47"},
+	Callback = function(Value)
+		local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver[Value].ITEMPICKUP
+		local Event = game:GetService("Workspace").Remote.ItemHandler
+		Event:InvokeServer(A_1)
+	end    
+})
+
+PF:AddDropdown({ -- Makes your guns OP
+	Name = "Mod Guns [BROKEN]",
+	Default = "",
+	Options = {"M9", "Remington 870", "AK-47"},
+	Callback = function(Value)
+		local module = nil
+		if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Value) then
+		module = require(game:GetService("Players").LocalPlayer.Backpack[v].GunStates)
+		if game:GetService("Players").LocalPlayer.Character:FindFirstChild(Value) then
+		module = require(game:GetService("Players").LocalPlayer.Character[v].GunStates)
+		end
+		end
+		if module ~= nil then
+		 module["MaxAmmo"] = math.huge
+		 module["CurrentAmmo"] = math.huge
+		 module["StoredAmmo"] = math.huge
+		 module["FireRate"] = 0.0000001
+		 module["Spread"] = 0
+		 module["Range"] = math.huge
+		 module["Bullets"] = 10
+		 module["ReloadTime"] = 0.000001
+		 module["AutoFire"] = true
+		end
+		end
+})
+
+PF:AddButton({ -- OP scripts i got off the dark web...
+ Name = "Prison life Admin + UI",
+ Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife"))()
+  loadstring(game:HttpGet("https://pastebin.com/raw/FAXBKd93"))()
+ end
+})
+ 
+OrionLib:Init()
+
+print("LOADED, SCRIPT MADE BY JOPZLL!") -- Checks if the script is on
+print("CoinU V1 is being used")
