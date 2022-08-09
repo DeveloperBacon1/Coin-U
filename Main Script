@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DeveloperBacon1/Coin-U/main/Key%20System"))()
