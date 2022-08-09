@@ -32,5 +32,12 @@ M:AddButton({
  Name = "Check Key",
  Callback = function()
   CheckKey()
- end
-})
+  end
+  })
+  
+  M:AddButton({
+   Name = "Get Key",
+   Callback = function()
+   setclipboard("https://discord.gg/pP9kz5bKbD")   
+  end
+  })
