@@ -1,0 +1,36 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Grayy12/KeySys/main/Protected%20(4).lua",true))()
+
+_G.KI = "String"
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "CoinU - Key system", HidePremium = false, SaveConfig = true, IntroText = "CoinU", ConfigFolder = "CoinUKeySystem"})
+
+
+function CheckKey()
+    if sf_key == KI then
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/DeveloperBacon1/Coin-U/main/UI%20%7C%20Sorce"))()
+    end
+end
+
+
+
+local M = Window:MakeTab({
+	Name = "Main",
+	PremiumOnly = false
+})
+
+M:AddTextbox({
+	Name = "Key Box",
+	Default = "Enter Key Here",
+	TextDisappear = true,
+	Callback = function(Value)
+		KI = Value
+	end	  
+})
+
+M:AddButton({
+ Name = "Check Key",
+ Callback = function()
+  CheckKey()
+ end
+})
